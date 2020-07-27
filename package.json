@@ -1,0 +1,23 @@
+{
+	"name": "hardocs-electron-gridsome",
+	"private": true,
+	"main": "./electron/main.js",
+	"scripts": {
+		"build": "gridsome build",
+		"develop": "gridsome develop",
+		"explore": "gridsome explore",
+		"electron": "electron .",
+		"dev": "nf start "
+	},
+	"dependencies": {
+		"gridsome": "^0.7.0"
+	},
+	"devDependencies": {
+		"electron": "^9.1.0",
+		"foreman": "^3.0.1",
+		"gridsome-plugin-typescript": "^0.4.0",
+		"ts-loader": "^8.0.0",
+		"typescript": "^3.9.6",
+		"wait-on": "^5.1.0"
+	}
+}
