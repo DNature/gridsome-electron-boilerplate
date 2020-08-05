@@ -13,10 +13,10 @@ module.exports = {
 		{
 			use: '@gridsome/source-filesystem',
 			options: {
-				path: './docs/**/*.md',
+				path: './test/**/*.md',
 				// baseDir: './docs',
 				typeName: 'Docs',
-				route: '/docs/:slug',
+				route: '/test/:slug',
 			},
 		},
 	],

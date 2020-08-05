@@ -1,4 +1,6 @@
+require('dotenv').config();
 const { app, BrowserWindow } = require('electron');
+
 const path = require('path');
 
 function createWindow() {
@@ -9,7 +11,12 @@ function createWindow() {
 			preload: path.join(__dirname, 'preload.js'),
 		},
 	});
-	mainWindow.loadURL('http://localhost:8080');
+	if (process.env.HDS_ENV === 'prod') {
+		const indexPath = path.join(__dirname, '..', 'dist', 'index.html');
+		mainWindow.loadFile(indexPath); // You can use this to load from any html file
+	} else {
+		mainWindow.loadURL('http://localhost:8080');
+	}
 }
 
 app.whenReady().then(() => {
