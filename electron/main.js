@@ -1,7 +1,21 @@
 require('dotenv').config();
 const { app, BrowserWindow } = require('electron');
-
 const path = require('path');
+const liveServer = require('live-server');
+
+const indexPath = path.join(__dirname, '..', 'dist', 'index.html');
+const distDir = path.join(__dirname, '..', 'dist');
+const host = 'localhost';
+const port = 8081;
+const url = 'http://' + host + ':' + port;
+const params = {
+	port: port,
+	host: host,
+	root: distDir,
+	open: false,
+	file: 'index.html',
+	wait: 100,
+};
 
 function createWindow() {
 	const mainWindow = new BrowserWindow({
@@ -12,8 +26,9 @@ function createWindow() {
 		},
 	});
 	if (process.env.HDS_ENV === 'prod') {
-		const indexPath = path.join(__dirname, '..', 'dist', 'index.html');
-		mainWindow.loadFile(indexPath); // You can use this to load from any html file
+		liveServer.start(params);
+		// mainWindow.loadFile(indexPath); // You can use this to load from any html file
+		mainWindow.loadURL(url);
 	} else {
 		mainWindow.loadURL('http://localhost:8080');
 	}
