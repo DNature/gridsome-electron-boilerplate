@@ -9,6 +9,7 @@
 		"explore": "gridsome explore",
 		"electron": "electron .",
 		"wait": "wait-on http://localhost:8081 && yarn electron",
+		"grant": "chmod +x ./startServer.sh",
 		"start": "./startServer.sh"
 	},
 	"dependencies": {

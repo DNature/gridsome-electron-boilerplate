@@ -25,7 +25,10 @@ function createWindow() {
 			preload: path.join(__dirname, 'preload.js'),
 		},
 	});
-	if (process.env.NODE_ENV === 'prod') {
+	if (
+		process.env.NODE_ENV === 'prod' ||
+		process.env.NODE_ENV === 'production'
+	) {
 		liveServer.start(params);
 		mainWindow.loadURL(url);
 	} else {
