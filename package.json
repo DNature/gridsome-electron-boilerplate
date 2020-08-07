@@ -5,7 +5,7 @@
 	"version": "1.0.0",
 	"scripts": {
 		"build": "gridsome build",
-		"develop": "gridsome develop",
+		"develop": "gridsome develop -p 3001",
 		"explore": "gridsome explore",
 		"electron": "electron .",
 		"wait": "wait-on http://localhost:8081 && yarn electron",

@@ -32,7 +32,7 @@ function createWindow() {
 		liveServer.start(params);
 		mainWindow.loadURL(url);
 	} else {
-		mainWindow.loadURL('http://localhost:8081');
+		mainWindow.loadURL('http://localhost:3001');
 	}
 }
 
