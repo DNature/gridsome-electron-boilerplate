@@ -7,7 +7,14 @@
 - foreman - install globally with `npm install -g foreman`. run `nf --help` to see more options
 - Typescript - install globally with `npm i -g typescript`
 
-## Starting up the server concurrently with foreman.
+## Quick start
 
-Run `npm install` to install the required dependencies then:
-Run `npm run dev` to start up the application.
+1. Clone the project:
+
+```bash
+git clone https://github.com/DNature/gridsome-electron-boilerplate.git <YOUR_PROJECT_NAME>
+
+# Your project name is optional
+```
+
+Move to the appropriate directory: `cd <YOUR_PROJECT_NAME>.`
