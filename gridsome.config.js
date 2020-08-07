@@ -12,12 +12,6 @@ module.exports = {
 		},
 		{
 			use: '@gridsome/source-filesystem',
-			options: {
-				path: './test/**/*.md',
-				// baseDir: './docs',
-				typeName: 'Docs',
-				route: '/test/:slug',
-			},
 		},
 	],
 };
