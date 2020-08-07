@@ -1,14 +1,15 @@
 {
-	"name": "hardocs-electron-gridsome",
+	"name": "gridsome-electron-boilerplate",
 	"private": true,
 	"main": "electron/main.js",
+	"version": "1.0.0",
 	"scripts": {
 		"build": "gridsome build",
-		"develop": "NODE_ENV=dev gridsome develop",
-		"explore": "NODE_ENV=prod gridsome explore",
+		"develop": "gridsome develop",
+		"explore": "gridsome explore",
 		"electron": "electron .",
-		"start": "NODE_ENV=dev nf start",
-		"wait": "wait-on http://localhost:8081 && yarn electron"
+		"wait": "wait-on http://localhost:8081 && yarn electron",
+		"start": "./startServer.sh"
 	},
 	"dependencies": {
 		"@gridsome/source-filesystem": "^0.6.2",
