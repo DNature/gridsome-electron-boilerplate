@@ -1,5 +1,5 @@
 #!/bin/bash
-read -s -p "Enter your environment: " NODE_ENV
+read -p "Enter your environment: " NODE_ENV
 echo $NODE_ENV
 if [ "$NODE_ENV" = "prod" ] 
 then
