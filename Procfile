@@ -1,4 +1,4 @@
 
 gridsome: yarn develop
-electron: wait-on http://localhost:8080 && electron .
+electron: wait-on http://localhost:8081 && electron .
 

@@ -3,11 +3,11 @@
 	"private": true,
 	"main": "electron/main.js",
 	"scripts": {
-		"build": "HDS_ENV=prod gridsome build",
+		"build": "gridsome build",
 		"develop": "HDS_ENV=dev gridsome develop",
 		"explore": "HDS_ENV=prod gridsome explore",
-		"electron": "HDS_ENV=prod electron .",
-		"dev": "HDS_ENV=dev nf start"
+		"electron": "electron .",
+		"start": "HDS_ENV=dev nf start"
 	},
 	"dependencies": {
 		"@gridsome/source-filesystem": "^0.6.2",
