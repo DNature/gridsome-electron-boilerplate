@@ -7,8 +7,8 @@
 		"build": "gridsome build",
 		"develop": "gridsome develop -p 8000",
 		"explore": "gridsome explore",
-		"electron": "electron .",
-		"wait": "wait-on http://localhost:8000 && yarn electron",
+		"prod": "NODE_ENV=production electron .",
+		"wait": "wait-on http://localhost:8000 && electron .",
 		"grant": "chmod +x ./startServer.sh",
 		"start": "./startServer.sh"
 	},
