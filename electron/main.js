@@ -14,7 +14,6 @@ const params = {
 	root: distDir,
 	open: false,
 	file: 'index.html',
-	wait: 100,
 };
 
 function createWindow() {
@@ -25,14 +24,11 @@ function createWindow() {
 			preload: path.join(__dirname, 'preload.js'),
 		},
 	});
-	if (
-		process.env.NODE_ENV === 'prod' ||
-		process.env.NODE_ENV === 'production'
-	) {
+	if (process.env.NODE_ENV === 'production') {
 		liveServer.start(params);
 		mainWindow.loadURL(url);
 	} else {
-		mainWindow.loadURL('http://localhost:3001');
+		mainWindow.loadURL('http://localhost:8000');
 	}
 }
 
