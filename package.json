@@ -4,10 +4,11 @@
 	"main": "electron/main.js",
 	"scripts": {
 		"build": "gridsome build",
-		"develop": "HDS_ENV=dev gridsome develop",
-		"explore": "HDS_ENV=prod gridsome explore",
+		"develop": "NODE_ENV=dev gridsome develop",
+		"explore": "NODE_ENV=prod gridsome explore",
 		"electron": "electron .",
-		"start": "HDS_ENV=dev nf start"
+		"start": "NODE_ENV=dev nf start",
+		"wait": "wait-on http://localhost:8081 && yarn electron"
 	},
 	"dependencies": {
 		"@gridsome/source-filesystem": "^0.6.2",

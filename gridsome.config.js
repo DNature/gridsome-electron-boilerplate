@@ -10,8 +10,14 @@ module.exports = {
 		{
 			use: 'gridsome-plugin-typescript',
 		},
-		{
-			use: '@gridsome/source-filesystem',
-		},
+		// {
+		// 	use: '@gridsome/source-filesystem',
+		// 	options: {
+		// 		path: './test/**/*.md',
+		// 		// baseDir: './docs',
+		// 		typeName: 'Docs',
+		// 		route: '/test/:slug',
+		// 	},
+		// },
 	],
 };

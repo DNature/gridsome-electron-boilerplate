@@ -11,7 +11,7 @@
     </p>
 
     <p class="home-links">
-      <a href="/docs/introduction/" target="_parent">Docs page</a>
+      <a href="/about" target="_parent">About page</a>
       <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
     </p>
   </Layout>

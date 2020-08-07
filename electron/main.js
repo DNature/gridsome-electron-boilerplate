@@ -3,10 +3,10 @@ const { app, BrowserWindow } = require('electron');
 const path = require('path');
 const liveServer = require('live-server');
 
-const indexPath = path.join(__dirname, '..', 'dist', 'index.html');
 const distDir = path.join(__dirname, '..', 'dist');
+
 const host = 'localhost';
-const port = 8081;
+const port = 4000;
 const url = 'http://' + host + ':' + port;
 const params = {
 	port: port,
@@ -25,12 +25,11 @@ function createWindow() {
 			preload: path.join(__dirname, 'preload.js'),
 		},
 	});
-	if (process.env.HDS_ENV === 'prod') {
+	if (process.env.NODE_ENV === 'prod') {
 		liveServer.start(params);
-		// mainWindow.loadFile(indexPath); // You can use this to load from any html file
 		mainWindow.loadURL(url);
 	} else {
-		mainWindow.loadURL('http://localhost:8080');
+		mainWindow.loadURL('http://localhost:8081');
 	}
 }
 
