@@ -20,7 +20,6 @@
 	},
 	"devDependencies": {
 		"electron": "^9.1.0",
-		"foreman": "^3.0.1",
 		"gridsome-plugin-typescript": "^0.4.0",
 		"ts-loader": "^8.0.0",
 		"typescript": "^3.9.6",
