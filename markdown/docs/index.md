@@ -6,7 +6,7 @@ next: '/docs/installation/'
 
 # Introduction
 
-Docc is a starter theme for [Gridsome](https://gridsome.org/) which is a static site generator powered by Vue. It allows you to quickly start writing your technical documentation for any kind of project.
+Gridsome_Electron_Boilerplate is a starter theme for [Gridsome](https://gridsome.org/) which is a static site generator powered by Vue. It allows you to quickly start writing your technical documentation for any kind of project.
 
 ## Fast by default
 
@@ -40,7 +40,7 @@ The most inportant colors are defined in the `src/layouts/Default.vue` file at t
 
 ```css
 :rrot {
-  --color-ui-primary: theme('colors.orange.600');
+	--color-ui-primary: theme('colors.orange.600');
 }
 ```
 
@@ -48,7 +48,7 @@ The most inportant colors are defined in the `src/layouts/Default.vue` file at t
 
 Of course this is just a starter to quickly get you going. After downloading and installing you can do whatever you want with this theme. Check out the `src` folder and take a look at the components.
 
-Docc uses [TailwindCSS](https://tailwindcss.com/). Colors and spacing can easily configured. To change the accent color, you only need to touch a single line in the code.
+Gridsome_Electron_Boilerplate uses [TailwindCSS](https://tailwindcss.com/). Colors and spacing can easily configured. To change the accent color, you only need to touch a single line in the code.
 
 Don't like how something was designed or implemented? Just change the code and **make it your way**.
 
