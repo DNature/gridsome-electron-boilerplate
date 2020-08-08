@@ -17,6 +17,7 @@
 		"@gridsome/transformer-remark": "^0.6.1",
 		"dotenv": "^8.2.0",
 		"gridsome": "^0.7.0",
+		"gridsome-plugin-tailwindcss": "^3.0.1",
 		"live-server": "^1.2.1"
 	},
 	"devDependencies": {
