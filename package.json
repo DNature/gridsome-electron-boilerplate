@@ -16,17 +16,18 @@
 		"fuse.js": "^6.4.1",
 		"gray-matter": "^4.0.2",
 		"gridsome": "^0.7.0",
+		"gridsome-plugin-ts": "^0.0.2",
 		"live-server": "^1.2.1",
 		"vue-feather-icons": "^5.1.0"
 	},
 	"devDependencies": {
-		"electron": "^9.1.0",
 		"@gridsome/remark-prismjs": "^0.3.0",
 		"@gridsome/source-filesystem": "^0.6.2",
 		"@gridsome/transformer-remark": "^0.6.1",
+		"electron": "^9.1.0",
+		"gridsome-plugin-tailwindcss": "^3.0.1",
 		"gridsome-plugin-typescript": "^0.4.0",
 		"prism-themes": "^1.4.0",
-		"gridsome-plugin-tailwindcss": "^3.0.1",
 		"ts-loader": "^8.0.0",
 		"typescript": "^3.9.6",
 		"wait-on": "^5.1.0"
