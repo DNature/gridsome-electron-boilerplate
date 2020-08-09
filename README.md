@@ -39,4 +39,4 @@ git clone https://github.com/DNature/gridsome-electron-boilerplate.git <YOUR_PRO
 - `prod` or `production` for production environment.
 - `dev` or `development` for development environment.
 
-Now you're ready to rumble! 🤓
+Now you're ready to rumble! 🤓 
