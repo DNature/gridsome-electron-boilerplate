@@ -6,8 +6,7 @@
 
 - Electron 8+ - install globally with `npm i -g electron@latest`
 - Gridsome - install `npm install --global @gridsome/cli`
-- foreman - install globally with `npm install -g foreman`. run `nf --help` to see more options
-- Typescript - install globally with `npm i -g typescript`
+- Typescript (Optional) - install globally with `npm i -g typescript`
 
 ## Quick start
 If you have the Gridsome CLI installed, simply run:
