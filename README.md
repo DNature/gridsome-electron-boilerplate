@@ -10,21 +10,12 @@
 
 ## Quick start
 
-If you have the Gridsome CLI installed, simply run:
-
-```bash
-gridsome create <YOUR_PROJECT_NAME> https://github.com/DNature/gridsome-electron-boilerplate
-```
-
-After creating your project, skip to the second step and continue till the end.
-
-If you done have Gridsome CLI then follow these steps.
-
 1. Clone the project:
 
 ```bash
-git clone https://github.com/DNature/gridsome-electron-boilerplate.git <YOUR_PROJECT_NAME>
-
+git clone -b feature/markdown https://github.com/DNature/gridsome-electron-boilerplate.git <YOUR_PROJECT_NAME>
+#  OR
+git clone --single-branch --branch feature/markdown https://github.com/DNature/gridsome-electron-boilerplate.git <YOUR_PROJECT_NAME>
 # if <YOUR_PROJECT_NAME> is not specified then it defaults to gridsome-electron-boilerplate
 ```
 
