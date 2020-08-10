@@ -8,5 +8,5 @@
 		"sourceMap": true,
 		"strict": true
 	},
-	"include": ["./src/**/*", "./src/vue-shims.d.ts"]
+	"include": ["./src/**/*"]
 }

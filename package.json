@@ -24,6 +24,7 @@
 		"@gridsome/remark-prismjs": "^0.3.0",
 		"@gridsome/source-filesystem": "^0.6.2",
 		"@gridsome/transformer-remark": "^0.6.1",
+		"@types/vue-feather-icons": "^5.0.0",
 		"electron": "^9.1.0",
 		"gridsome-plugin-tailwindcss": "^3.0.1",
 		"gridsome-plugin-typescript": "^0.4.0",
